@@ -5,7 +5,6 @@
 	<!-- At runtime, the client will inject JSON directly into the DOM as shown in the example below. -->
 	<!-- Note that each value in the associative array can be either a string or an array of strings. -->
 	<script type="application/json" id="policies">
-		// POLICIES_JSON_PLACEHOLDER	
 	</script>
 	<script language="JavaScript">
 		// functions for accessing and formatting model elements 
@@ -73,6 +72,8 @@
 		var kFareRulesRestrictURL = "http://www.priceline.com/rules/";
 		var kFareRulesRestrictClickHereURL = "http://www.priceline.com/rules/";
 
+		var dotRequirementsUrl = "https://www.transportation.gov/individuals/aviation-consumer-protection/refunds/";
+
 		var kCheckinURL = "https://www.priceline.com/Customerservice/faq/ShowHelp.asp?faq=ext(air_id)&negotiatorapp=y";
 		var kValidPassportURL = "https://www.priceline.com/Customerservice/faq/ShowHelp.asp?faq=ext(air_id)&negotiatorapp=y";
 
@@ -110,7 +111,8 @@
     
     	var nameChanges = "Airline tickets are non-transferrable. Name changes or adjustments are not allowed once purchased.";
 
-	var dotRequirements = "As per the new DoT guidelines, you are entitled to refunds in case of a major change in your flight schedule. The airline can’t push you to accept credits.";
+	var dotRequirements = "Involuntary, material changes made by your airline to itineraries to, from or within the United States may entitle you to a refund per " + 
+					"<a href=\"" + dotRequirementsUrl + "\">U.S. DOT Guidelines for refunds.";
     
     	var availability = "Airfares and flight availability are not guaranteed until purchased.";
     
